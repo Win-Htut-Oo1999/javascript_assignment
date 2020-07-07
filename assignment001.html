@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Arithmetic Test</title>
+
+    <script>
+
+        function Calculate() {
+            var showResult;
+            var num1 = parseInt(document.getElementById("numOne").value);
+            var num2 = parseInt(document.getElementById("numOne").value);
+            var a = document.getElementById("arr").value;
+
+            switch (a) {
+                case '+': showResult = num1 + num2; break;
+                case '-': showResult = num1 - num2; break;
+                case '*': showResult = num1 * num2; break;
+                case '/': showResult = num1 / num2; break;
+            }
+            document.getElementById("demo").innerHTML = showResult;
+        }
+
+    </script>
+</head>
+
+<body>
+    
+    Number1: <input type="number" id="numOne" /><br>
+    Number2: <input type="number" id="numTwo" /><br>
+    <button id="arr" value="+" onclick="Calculate()">Add</button>
+    <button id="arr" value="-" onclick="Calculate()">Sub</button>
+    <button id="arr" value="*" onclick="Calculate()">Mul</button>
+    <button id="arr" value="/" onclick="Calculate()">Div</button>
+    <p
+    <label id="demo"></label>
+
+</body>
+
+</html>
