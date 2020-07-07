@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Age Calculation</title>
+        <script>
+            function calcAge(){
+                var age=document.getElementById("demo1").value;
+                var date=new Date();
+                var year=date.getFullYear();
+                var date1=new Date(age);
+                var year1=date1.getFullYear();
+                if(year-year1>18){
+                    alert("Age is over 18+");
+                }
+                else{
+                    alert("Age is under 18");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Enter Age:<input type="date" id="demo1"><br><br>
+        <button type="button" onclick="calcAge()">Calculate Age</button>
+    </body>
+</html>
