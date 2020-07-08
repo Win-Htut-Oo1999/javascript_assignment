@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+               var num1=parseInt($("#num").val());   
+               $("#value1").html(num1); 
+               
+        });
+            $("#btn2").click(function(){
+               var num2=parseInt($("#name").val());
+               $("#value2").html(num2);
+            });
+            $("#btn2").click(function(){
+                var num1=parseInt($("#num").val());
+                var num2=parseInt($("#name").val());
+                var result=num1-num2;
+                $("#value3").html(result);
+            });
+
+     });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .main{
+            height:500px;
+            width:800px;
+            border-radius: 20px;
+            border-style: solid;
+            border-color: sandybrown;
+            background-color: slategray;
+        }
+        .main1{
+            float:left;
+        }
+        .main2{
+            float:left;
+        }
+        #num{
+            width:180px;
+            color:aliceblue;
+            margin-left: 5px;
+            font-weight: bold;
+            color:teal;
+        }
+        #num:hover{
+            background-color:lightsalmon;
+        }
+        #name{
+            width:180px;
+            color:aliceblue;
+            margin-left: 5px;
+            font-weight: bold;
+            color:teal;
+        }
+        #name:hover{
+            background-color:lightsalmon;
+        }
+        input:hover{
+            background-color: lime;
+        }
+        #btn{
+            background-color: mediumpurple;
+        }
+        .div1{
+            border-style :solid;
+            border-color: blueviolet;
+            width: 210px;
+            height:100px;
+            margin-left: 7px;
+            padding-left:10px;
+            margin-bottom: 15px;
+            border-radius: 20px;
+        }
+        .div2{
+            border-color: brown;
+            border-style: solid;
+            width:210px;
+            height:150px;
+            margin-left: 7px;
+            padding-left: 10px;
+            border-radius: 20px;
+        }
+        .iconic{
+            float:right;
+        }
+        #number{
+            width:182px;
+            margin-left: 5px;
+        }
+        .main3{
+            float:left;
+        }
+        .main4{
+            float:left;
+        }
+        #value1{
+            margin-left: 60px;
+
+        }
+        #value2{
+            margin-left:85px;
+            margin-top:22px;
+        }
+        #value3{
+            margin-left:80px;
+            margin-top:22px;
+        }
+    </style>
+    <title>Budget Calculator</title>
+</head>
+<body>
+<div class="main">
+  <div class="main1">
+    <h3 style="font-style: italic;color:blue;margin-left:5px;"><marquee direction="right">BUTGET APP</marquee></h3>
+    <div class="div1">
+       Enter Total Amount:<input type="number" id="num" placeholder="Type your balance"/><br><br>
+      <input type="button" id="btn1" value="Calculate" style="width:100px;border-color: chartreuse;margin-left: 5px;">
+    </div>
+    <div class="div2">
+       Please Enter Your Expense:  <input type="number" id="name" placeholder="Add Amount"/><br><br>
+        Please Enter Expire Amounts:<input type="number" id="number" placeholder="Expire Amount"/><br><br>
+        <input type="button" id="btn2" value="Add Expense" style="width:100px;border-color: red;margin-left: 5px;">
+    </div>
+  </div> 
+  <div class="main2">
+    <h2 id="head2" style="margin-left: 40px;margin-top: 54px;color:burlywood;">BUDGET</h2>
+    <i class="fa fa-money" style="font-size: 50px;margin-left: 60px;margin-top: 1px;background-color:cornflowerblue;"></i>
+    <h3 id="value1"></h3>
+  </div> 
+  <div class="main3">
+    <h2 id="head3" style="margin-left: 40px;margin-top: 54px;color:burlywood;">EXPENSES</h2>
+    <i class="fa fa-credit-card" style="font-size: 45px;margin-left: 75px;margin-top: 1px;background-color:cornflowerblue;"></i>
+    <h3 id="value2"></h3>
+  </div> 
+  <div class="main4">
+    <h2 id="head4" style="margin-left: 40px;margin-top: 54px;color:burlywood">BALANCE</h2>
+    <i class="fa fa-usd" style="font-size: 45px;margin-left: 85px;margin-top: 1px;background-color:cornflowerblue"></i>
+    <h3 id="value3"></h3>
+  </div> 
+  <div>
+      <tbody id="table">
+
+      </tbody>
+  </div>
+</div>
+</body>
+</html>
