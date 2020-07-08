@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Even and Odd Caluclator</title>
+    </head>
+    <body>
+        <script>
+            function evenAndOdd(){
+            var num1=parseInt(document.getElementById("demo1").value);
+            var num2=parseInt(document.getElementById("demo2").value);
+            for(var i=num1;i<=num2;i++){
+                if(i%2==0){
+                    document.getElementById("even").innerHTML+=p+".";
+                }
+                else{
+                    document.getElementById("odd").innerHTML+=p+".";
+                }
+            }
+        </script>
+    Enter number: <input type="number" id="demo1"/>
+    Enter Number1: <input type="number" id="demo2"/>
+    <button type="button" onclick="evenAndOdd()">Submit</button>
+    <p>Odd:<span id="even"></span></p>
+
+    <p>Odd:<span id="even"></span></p>
+
+   </body> 
+</html>
